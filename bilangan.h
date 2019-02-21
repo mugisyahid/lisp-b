@@ -3,29 +3,31 @@
 
 #include "boolean.h"
 
-#define BULAT	1
-#define PECAHAN	2
-#define RIIL	3
+#define BULAT 1
+#define PECAHAN 2
+#define RIIL 3
 
 typedef long long int bulat_type;
-typedef struct {
+typedef struct
+{
 	bulat_type pembilang;
 	bulat_type penyebut;
 } pecahan_type;
 typedef float riil_type;
-typedef struct {
+typedef struct
+{
 	bulat_type bulat;
 	pecahan_type pecahan;
 	riil_type riil;
 	int tipe;
 } bilangan_type;
 
-#define TipeBilangan(Bil) 	(Bil).tipe
-#define Bulat(Bil) 			(Bil).bulat
-#define Pecahan(Bil) 		(Bil).pecahan
-#define Pembilang(Bil) 		(Bil).pecahan.pembilang
-#define Penyebut(Bil) 		(Bil).pecahan.penyebut
-#define Riil(Bil) 			(Bil).riil
+#define TipeBilangan(Bil) (Bil).tipe
+#define Bulat(Bil) (Bil).bulat
+#define Pecahan(Bil) (Bil).pecahan
+#define Pembilang(Bil) (Bil).pecahan.pembilang
+#define Penyebut(Bil) (Bil).pecahan.penyebut
+#define Riil(Bil) (Bil).riil
 
 void TulisBilangan(bilangan_type Bil);
 

@@ -7,23 +7,23 @@
 #include "managefile.h"
 #include "boolean.h"
 
-#define MAX			10000
-#define EOE			'\0'
-#define BLANK		' '
-#define MARK 		'#'
-#define DOT			'.'
-#define LB			'('
-#define RB			')'
-#define SLASH		'/'
-#define MINUS		'-'
-#define NL			'\n'
-#define BILANGAN	1
-#define LIST		2
-#define PEUBAH		3
-#define FUNGSI		4
-#define ANGKA		5
-#define KATA		6
-#define NVALID		0
+#define MAX 10000
+#define EOE '\0'
+#define BLANK ' '
+#define MARK '#'
+#define DOT '.'
+#define LB '('
+#define RB ')'
+#define SLASH '/'
+#define MINUS '-'
+#define NL '\n'
+#define BILANGAN 1
+#define LIST 2
+#define PEUBAH 3
+#define FUNGSI 4
+#define ANGKA 5
+#define KATA 6
+#define NVALID 0
 
 extern char Input[MAX];
 extern char Ekspresi[MAX];

@@ -8,19 +8,21 @@
 #include "managefile.c"
 #include "boolean.h"
 
-int main(){
+int main()
+{
 	int baris;
-	
+
 	remove("_temp.txt");
 	temp = fopen("_temp.txt", "a+");
 	baris = 1;
 	IdxVar = 0;
-	
+
 	printf("LISPB\n");
-	for(;;){
+	for (;;)
+	{
 		Indeks = 0;
 		CreateList(&ListEkspresi);
-		printf("[%d]> ",baris);
+		printf("[%d]> ", baris);
 		InputEkspresi();
 		fputs(Ekspresi, temp);
 		fputs("\n", temp);
@@ -31,6 +33,6 @@ int main(){
 		baris++;
 		printf("\n");
 	}
-	
+
 	return 0;
 }

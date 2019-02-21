@@ -4,38 +4,40 @@
 #include "bilangan.h"
 #include "boolean.h"
 
-#define MAXNAMA 	100
-#define nil 		NULL
-#define BILANGAN	1
-#define LIST		2
-#define PEUBAH		3
-#define FUNGSI		4
-#define BOOL		5
+#define MAXNAMA 100
+#define nil NULL
+#define BILANGAN 1
+#define LIST 2
+#define PEUBAH 3
+#define FUNGSI 4
+#define BOOL 5
 
 typedef struct telmtlist *address;
 typedef address listoflist;
-typedef struct {
-    bilangan_type bilangan;
+typedef struct
+{
+	bilangan_type bilangan;
 	listoflist list;
 	char peubah[MAXNAMA];
 	char fungsi[MAXNAMA];
 	int b;
 	int tipe;
 } infotype;
-typedef struct telmtlist {
+typedef struct telmtlist
+{
 	infotype info;
 	address next;
 } elmtlist;
 
-#define First(L)		(L)
-#define Info(P) 		(P)->info
-#define Bilangan(Inf) 	(Inf).bilangan
-#define List(Inf) 		(Inf).list
-#define Peubah(Inf)		(Inf).peubah
-#define Fungsi(Inf)		(Inf).fungsi
-#define Bool(Inf)		(Inf).b
-#define TipeInfo(Inf)	(Inf).tipe
-#define Next(P) 		(P)->next
+#define First(L) (L)
+#define Info(P) (P)->info
+#define Bilangan(Inf) (Inf).bilangan
+#define List(Inf) (Inf).list
+#define Peubah(Inf) (Inf).peubah
+#define Fungsi(Inf) (Inf).fungsi
+#define Bool(Inf) (Inf).b
+#define TipeInfo(Inf) (Inf).tipe
+#define Next(P) (P)->next
 
 address Alokasi(infotype X);
 
