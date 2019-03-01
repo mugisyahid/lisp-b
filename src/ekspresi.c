@@ -14,12 +14,12 @@ boolean IsEkspresiEnd()
 	int i;
 
 	i = 0;
-	while (Input[i] != MARK && Input[i] != EOE)
+	while (Input[i] != EOE)
 	{
 		i++;
 	}
 
-	return Input[i] == MARK;
+	return Input[i] == EOE;
 }
 
 void InputEkspresi()
