@@ -15,6 +15,7 @@
 #define LB '('
 #define RB ')'
 #define SLASH '/'
+#define BACKSLASH '\\'
 #define MINUS '-'
 #define NL '\n'
 #define BILANGAN 1

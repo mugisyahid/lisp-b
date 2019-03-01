@@ -7,6 +7,7 @@
 #include "ekspresi.h"
 #include "managefile.h"
 #include "boolean.h"
+#include "bilangan.h"
 
 int main()
 {

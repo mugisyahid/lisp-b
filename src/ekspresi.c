@@ -9,6 +9,11 @@ int Indeks;
 listoflist ListEkspresi;
 int IdxEval;
 
+
+/*
+ * TODO: adding common sytax slash -> enter
+ * ex: (+ 1 \(enter) 2) is valid list
+ */
 boolean IsEkspresiEnd()
 {
 	int i;
