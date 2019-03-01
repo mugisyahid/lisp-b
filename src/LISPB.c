@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-#include "bilangan.c"
-#include "listoflist.c"
-#include "fungsi.c"
-#include "peubah.c"
-#include "ekspresi.c"
-#include "managefile.c"
+#include "bilangan.h"
+#include "listoflist.h"
+#include "fungsi.h"
+#include "peubah.h"
+#include "ekspresi.h"
+#include "managefile.h"
 #include "boolean.h"
 
 int main()
