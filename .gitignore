@@ -54,3 +54,9 @@ dkms.conf
 
 # intelj folder
 .idea
+
+# generated files
+LISPB
+_temp.txt
+*.o*
+*.exe*
